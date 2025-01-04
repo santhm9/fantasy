@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Panel</h1>
+    </header>
+    <main>
+        <button id="themeToggle">Toggle Dark Mode</button>
+        <form id="updateForm">
+            <label for="homeTeam">Home Team:</label>
+            <select id="homeTeam" required></select>
+
+            <label for="awayTeam">Away Team:</label>
+            <select id="awayTeam" required></select>
+
+            <label for="result">Result:</label>
+            <select id="result" required>
+                <option value="homeWin">Home Win</option>
+                <option value="awayWin">Away Win</option>
+                <option value="noResult">No Result</option>
+            </select>
+
+            <button type="submit">Update Match</button>
+        </form>
+        <p id="statusMessage"></p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

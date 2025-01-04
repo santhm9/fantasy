@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IPL Fantasy League</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>IPL Fantasy League</h1>
+    </header>
+    <main>
+        <button id="themeToggle">Toggle Dark Mode</button>
+        <form id="teamSelectionForm">
+            <label for="playerName">Player Name:</label>
+            <input type="text" id="playerName" required>
+
+            <label for="rideOrDie">T1 (Ride-or-Die Team):</label>
+            <select id="rideOrDie" required></select>
+
+            <label for="darkHorse">T2 (Second Choice):</label>
+            <select id="darkHorse" required></select>
+
+            <label for="dislike">T3 (Nemesis):</label>
+            <select id="dislike" required></select>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="statusMessage"></p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
